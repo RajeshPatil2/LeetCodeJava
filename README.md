@@ -1,27 +1,33 @@
-LeetCode Java Solutions
-=======================
+# LeetCode Java Solutions
 
-Author: Rajesh Patil
-GitHub: https://github.com/RajeshPatil2/LeetCodeJava
-Date: 2026-01-06
+This repository contains my Java solutions for LeetCode problems.
+Each problem is organized by category in separate packages for clarity.
 
-Project Overview:
------------------
-This project contains Java solutions for selected LeetCode problems.
-The solutions are organized by problem type (Array, LinkedList, Hashing) and
-demonstrate clean coding practices and proper package structure.
+---
 
-Key Features:
--------------
-1. Well-structured packages for easier navigation.
-2. Fully working Java solutions for each problem.
-3. Only essential source files included.
-4. Simple and clean coding style.
+## 🔹 Example Problem: Rotate List (Linked List)
 
+**Problem Name:** Rotate List  
+**Difficulty:** Medium  
 
-Note:
------
-- This project is meant for learning and demonstration purposes.
-- The focus is on solving LeetCode problems with clean Java code.
-- Only source files (`src`) are important. Ignore IDE generated files.
+**Description:**  
+Given the head of a linked list, rotate the list to the right by k places.
+
+**Example 1:**  
+Input: head = [1,2,3,4,5], k = 2  
+Output: [4,5,1,2,3]  
+
+**Example 2:**  
+Input: head = [0,1,2], k = 4  
+Output: [2,0,1]  
+
+**Constraints:**  
+- The number of nodes in the list is in the range [0, 500]  
+- -100 <= Node.val <= 100  
+- 0 <= k <= 2 * 10^9  
+
+**Solution File:** `RotateList.java`  
+**Package:** `com.leetcode.linkedlist`
+---
+
 
