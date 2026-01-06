@@ -1,0 +1,58 @@
+Project Name: MaxLevelSumBinaryTree
+
+Description:
+-------------
+This project finds the level in a binary tree which has the maximum sum of node values.
+
+- Level of root is 1.
+- Level of children increases by 1 per depth.
+- The program uses BFS (Breadth First Search) to traverse the tree level by level.
+- It calculates the sum at each level and returns the level with the maximum sum.
+
+Features:
+----------
+1. Supports positive and negative integers in tree nodes.
+2. BFS ensures level-wise traversal.
+3. Easy to understand and HR-friendly.
+4. Handles large trees efficiently (up to 10^4 nodes).
+
+
+
+Example:
+---------
+Tree:
+        1
+       / \
+      7   0
+     / \
+    7  -8
+
+Code in Main.java:
+------------------
+TreeNode root = new TreeNode(1);
+root.left = new TreeNode(7);
+root.right = new TreeNode(0);
+root.left.left = new TreeNode(7);
+root.left.right = new TreeNode(-8);
+
+Solution solution = new Solution();
+int result = solution.maxLevelSum(root);
+System.out.println("Level with maximum sum: " + result);
+
+Output:
+--------
+Level with maximum sum: 2
+
+Time Complexity:
+----------------
+O(n), where n is the number of nodes in the tree.
+
+Space Complexity:
+-----------------
+O(n), due to the queue used in BFS.
+
+Notes:
+------
+- Uses Queue for BFS.
+- If multiple levels have same sum, returns the first (topmost) level.
+- Suitable for HR and technical interviews.

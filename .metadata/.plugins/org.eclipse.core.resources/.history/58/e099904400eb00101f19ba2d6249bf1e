@@ -1,0 +1,34 @@
+package com.leetcode.string;
+
+public class LargestEvenNumber {
+
+	// Main method to test
+	public static void main(String[] args) {
+		String s1 = "1112";
+		String s2 = "221";
+		String s3 = "1";
+
+		System.out.println("Input: " + s1 + " => Largest Even: " + largestEven(s1));
+		System.out.println("Input: " + s2 + " => Largest Even: " + largestEven(s2));
+		System.out.println("Input: " + s3 + " => Largest Even: " + largestEven(s3));
+	}
+
+	// Method to get largest even number from string
+	public static String largestEven(String s) {
+		int lastEvenIndex = -1;
+
+		// Find the last '2' (even digit) in the string
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == '2') {
+				lastEvenIndex = i;
+			}
+		}
+
+		// If no even digit exists, return empty string
+		if (lastEvenIndex == -1)
+			return "";
+
+		// Take substring from start to last even digit (inclusive)
+		return s.substring(0, lastEvenIndex + 1);
+	}
+}
