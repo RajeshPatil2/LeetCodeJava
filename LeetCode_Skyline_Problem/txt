@@ -1,0 +1,75 @@
+# 🏙️ The Skyline Problem – Java Solution
+
+This project contains a Java implementation of **The Skyline Problem**
+(LeetCode Hard).
+
+---
+
+## 📌 Problem Statement
+You are given buildings represented as:
+[left, right, height].
+
+Return the skyline formed by these buildings.
+
+---
+
+## 🛠️ Technologies Used
+- Java
+- PriorityQueue (Max Heap)
+- Collections Framework
+
+---
+
+## 📂 Project Structure
+LeetCode_Skyline_Problem
+└── src
+└── com
+└── leetcode
+└── skyline
+└── Solution.java
+
+
+---
+
+## ▶️ How to Run (Eclipse)
+1. Create Java Project
+2. Create package `com.leetcode.skyline`
+3. Create `Solution.java`
+4. Run as Java Application
+
+---
+
+## 🧠 Algorithm Used
+- Sweep Line Algorithm
+- Max Heap to track highest building
+
+---
+
+## ⏱ Complexity
+- Time: `O(N log N)`
+- Space: `O(N)`
+
+---
+
+## 🧪 Sample Input
+
+
+[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]
+
+
+## ✅ Output
+
+
+[2,10]
+[3,15]
+[7,12]
+[12,0]
+[15,10]
+[20,8]
+[24,0]
+
+
+---
+
+### 👨‍💻 Author
+Rajesh Patil
